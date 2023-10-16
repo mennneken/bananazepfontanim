@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "outDir": "build",
+        "target": "ESNext"
+    },
+    "files": ["src/scripts/main.ts"]
+}
