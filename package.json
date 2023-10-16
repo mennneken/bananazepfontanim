@@ -1,0 +1,23 @@
+{
+  "name": "bananazepfontanim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mennneken/bananazepfontanim.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mennneken/bananazepfontanim/issues"
+  },
+  "homepage": "https://github.com/mennneken/bananazepfontanim#readme",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
