@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Bananazep";
     src: local("Bananazep"),
-        url("../src/assets/BananazepFontVariableVF.woff2") format("woff2");
+        url("./src/assets/BananazepFontVariableVF.woff2") format("woff2");
 }
 body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -18,9 +18,6 @@ header {
     top: 0;
     padding: clamp(0.5rem, 2vw, 3rem);
     background-color: #efefef;
-}
-
-.test-text {
 }
 
 main {
