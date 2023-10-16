@@ -3,31 +3,89 @@
     src: local("Bananazep"),
         url("./src/assets/BananazepFontVariableVF.woff2") format("woff2");
 }
+:root {
+    --small-spacing: 0.3rem;
+    --medium-spacing: 0.5rem;
+    --large-spacing: 0.9rem;
+
+    --gradient: linear-gradient(
+        111.4deg,
+        rgba(238, 113, 113, 1) 1%,
+        rgba(246, 215, 148, 1) 58%
+    );
+    --color-gradient: rgba(238, 113, 113, 1);
+}
+
 body {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-    display: grid;
-    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     margin: 0;
     padding: 0;
+
+    font-size: clamp(14pt, 2vw, 26pt);
 }
 
 header {
     position: sticky;
     top: 0;
     padding: clamp(0.5rem, 2vw, 3rem);
-    background-color: #efefef;
+    background-image: var(--gradient);
+    background-color: var();
+}
+
+header,
+.control {
+    display: flex;
+    flex-flow: row;
+    gap: var(--large-spacing);
+    align-items: center;
 }
 
 main {
     font-family: "Bananazep";
+    margin: 0 auto;
     padding: 2rem clamp(0.5rem, 2vw, 3rem);
 }
 
 section {
-    padding: clamp(1rem, 2.5vh, 3rem);
+    padding: clamp(0.5rem, 2vw, 3rem);
+}
+
+section:nth-child(even) {
+    background-image: var(--gradient);
+    background-color: var(--color-gradient);
+    border-radius: 2em;
 }
 section > section {
-    padding: clamp(1rem, 1.25vh, 3rem);
+    background-image: none !important;
+    background-color: transparent !important;
+    padding: 00;
+}
+
+section > section + section {
+    margin-top: 5em;
+}
+
+h2,
+h3 {
+    margin: 0.5em 0;
+}
+
+h3 {
+    color: #0e197d;
+}
+.control {
+    font-size: 75%;
+    padding: clamp(var(--small-spacing), 1vw, var(--large-spacing))
+        var(--large-spacing);
+    border: none;
+    border-radius: var(--small-spacing);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+p.line-break {
+    line-break: anywhere;
+}
+
+p.centered {
+    text-align: center;
 }
