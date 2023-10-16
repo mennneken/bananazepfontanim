@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Bananazep";
+    src: local("Bananazep"),
+        url("../src/assets/BananazepFontVariableVF.woff2") format("woff2");
+}
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: clamp(0.5rem, 2vw, 3rem);
+    background-color: #efefef;
+}
+
+.test-text {
+}
+
+main {
+    font-family: "Bananazep";
+    padding: 2rem clamp(0.5rem, 2vw, 3rem);
+}
+
+section {
+    padding: clamp(1rem, 2.5vh, 3rem);
+}
+section > section {
+    padding: clamp(1rem, 1.25vh, 3rem);
+}
