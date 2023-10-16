@@ -6,7 +6,6 @@ const controlSize = document.getElementById("text-size-input");
 const tryText = document.getElementsByClassName("test-text");
 
 window.onload = () => {
-    console.log(tryText);
     setValueOutput(controlVariableWidth, outputVariableWidthReturn);
     setSizeValueOfText(controlSize.value);
     setWidthValueOfText(controlVariableWidth.value);
