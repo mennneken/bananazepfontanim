@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Bananazep";
+    src:
+      local("Bananazep"),
+      url("BananazepFontVariableVF.woff2") format("woff2");
+  }
+    body {
+      font-family: "Bananazep";
+      display: grid;
+      height: 100vh;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      display: flex;
+      font-size: clamp(4rem, 10vw,6rem);
+      vertical-align: middle;
+      align-items: center;
+      justify-content: center;
+      cursor: grabbing;
+    }
