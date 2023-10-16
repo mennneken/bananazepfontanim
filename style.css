@@ -52,14 +52,14 @@ section {
 }
 
 section:nth-child(even) {
-    background-image: var(--gradient);
+    /* background-image: var(--gradient);
     background-color: var(--color-gradient);
-    border-radius: 2em;
+    border-radius: 2em; */
 }
 section > section {
-    background-image: none !important;
+    /* background-image: none !important;
     background-color: transparent !important;
-    padding: 00;
+    padding: 00; */
 }
 
 section > section + section {
