@@ -36,7 +36,8 @@ header {
 header,
 .control {
     display: flex;
-    flex-flow: row;
+    /* flex-flow: row; */
+    flex-wrap: wrap;
     gap: var(--large-spacing);
     align-items: center;
 }
