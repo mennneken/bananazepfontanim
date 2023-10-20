@@ -19,7 +19,7 @@ function setValueOutput(elementSource, elementTarget) {
 }
 function setSizeValueOfText(value) {
     Array.from(tryText).forEach((element) => {
-        element.style.fontSize = `${value}em`;
+        document.body.style.fontSize = `${value}em`;
     });
 }
 function setWidthValueOfText(value) {

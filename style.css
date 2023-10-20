@@ -67,6 +67,24 @@ section > section + section {
     margin-top: 5em;
 }
 
+section.full {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+h1 > span,
+h2 > span,
+p > span {
+    font-variation-settings: "wght" 100 !important;
+}
+
+h1 {
+    font-size: clamp(4em, 10vh, 6em);
+}
+
 h2,
 h3 {
     margin: 0.5em 0;
